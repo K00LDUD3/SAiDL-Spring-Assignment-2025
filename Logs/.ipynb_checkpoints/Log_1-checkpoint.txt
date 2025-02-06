@@ -1,0 +1,86 @@
+<bound method Module.state_dict of NormalizedCrossEntropyLoss_REVISED(
+  (reduction): SimpleCNN(
+    (conv_layers): Sequential(
+      (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (2): ReLU()
+      (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (4): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (5): ReLU()
+      (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (7): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (8): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (9): ReLU()
+      (10): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (11): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (12): ReLU()
+      (13): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (14): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (15): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (16): ReLU()
+      (17): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (18): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (19): ReLU()
+      (20): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (fc_layers): Sequential(
+      (0): Flatten(start_dim=1, end_dim=-1)
+      (1): Linear(in_features=2048, out_features=256, bias=True)
+      (2): ReLU()
+      (3): Dropout(p=0.5, inplace=False)
+      (4): Linear(in_features=256, out_features=10, bias=True)
+    )
+  )
+  (cross_entropy): CrossEntropyLoss()
+)>
+
+<bound method Optimizer.state_dict of SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    initial_lr: 0.01
+    lr: 0.0025
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)>
+
+{'step_size': 15, 'gamma': 0.5, 'base_lrs': [0.01], 'last_epoch': 31, 'verbose': False, '_step_count': 32, '_get_lr_called_within_step': False, '_last_lr': [0.0025]}
+
+
+Key Info: Loss: NormalizedCrossEntropy_REVISED | Optimizer(Adam): LR_0.1 MOMENTUM_0.9 W_DECAY_5e-4 | Scheduler: STEP_15 GAMMA_0.5
+
+
+Epoch 1 | Loss: 0.9924 | Accuracy: 0.1636
+Epoch 2 | Loss: 0.9894 | Accuracy: 0.1769
+Epoch 3 | Loss: 0.9868 | Accuracy: 0.1870
+Epoch 4 | Loss: 0.9839 | Accuracy: 0.1971
+Epoch 5 | Loss: 0.9819 | Accuracy: 0.2024
+Epoch 6 | Loss: 0.9793 | Accuracy: 0.2118
+Epoch 7 | Loss: 0.9766 | Accuracy: 0.2181
+Epoch 8 | Loss: 0.9744 | Accuracy: 0.2252
+Epoch 9 | Loss: 0.9710 | Accuracy: 0.2344
+Epoch 10 | Loss: 0.9677 | Accuracy: 0.2409
+Epoch 11 | Loss: 0.9640 | Accuracy: 0.2463
+Epoch 12 | Loss: 0.9594 | Accuracy: 0.2554
+Epoch 13 | Loss: 0.9553 | Accuracy: 0.2637
+Epoch 14 | Loss: 0.9504 | Accuracy: 0.2752
+Epoch 15 | Loss: 0.9303 | Accuracy: 0.3075
+Epoch 16 | Loss: 0.9188 | Accuracy: 0.3237
+Epoch 17 | Loss: 0.9098 | Accuracy: 0.3368
+Epoch 18 | Loss: 0.9018 | Accuracy: 0.3459
+Epoch 19 | Loss: 0.8909 | Accuracy: 0.3645
+Epoch 20 | Loss: 0.8840 | Accuracy: 0.3741
+Epoch 21 | Loss: 0.8743 | Accuracy: 0.3858
+Epoch 22 | Loss: 0.8709 | Accuracy: 0.3914
+Epoch 23 | Loss: 0.8574 | Accuracy: 0.4099
+Epoch 24 | Loss: 0.8479 | Accuracy: 0.4242
+Epoch 25 | Loss: 0.8475 | Accuracy: 0.4237
+Epoch 26 | Loss: 0.8345 | Accuracy: 0.4425
+Epoch 27 | Loss: 0.8289 | Accuracy: 0.4483
+Epoch 28 | Loss: 0.8210 | Accuracy: 0.4599
+Epoch 29 | Loss: 0.8165 | Accuracy: 0.4650
+Epoch 30 | Loss: 0.7444 | Accuracy: 0.5544
