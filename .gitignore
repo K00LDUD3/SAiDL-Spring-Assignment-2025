@@ -5,3 +5,5 @@ KEYS.env
 Core_ML/data/cifar-10-batches-py/batches.meta
 Core_ML/data/cifar-10-batches-py/data_batch_1
 /Core_ML/data
+Reinforcement_Learning/training_log.txt
+Reinforcement_Learning/training_log.txt
