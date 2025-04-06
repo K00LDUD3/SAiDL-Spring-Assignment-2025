@@ -1,0 +1,30 @@
+21:35:00 - <bound method Module.state_dict of NormalizedCrossEntropyLoss(
+  (cross_entropy): CrossEntropyLoss()
+)>
+21:35:00 - 
+
+21:35:00 - <bound method Optimizer.state_dict of SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    initial_lr: 0.01
+    lr: 0.009755282581475767
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)>
+21:35:00 - 
+
+21:35:00 - NOISE RATE ---- 0.5
+21:35:00 - 
+
+21:35:00 - <bound method LRScheduler.state_dict of <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x000001FF5D0491D0>>
+21:35:00 - 
+
+21:35:00 - Terminate Train Loop (Manual)
+21:35:00 - Train Time : 0.000998s
+Finished Training...
+21:35:00 - Arch & metrics Saved to NCE\Models\cnn_20.pth...

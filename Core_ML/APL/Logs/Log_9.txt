@@ -1,0 +1,284 @@
+13:27:12 - <bound method APLLoss.state_dict of APLLoss(
+  (active_loss): NormalizedCrossEntropyLoss_REVISED(
+    (reduction): CNN_V4(
+      (conv_layers): Sequential(
+        (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): GroupNorm(8, 32, eps=1e-05, affine=True)
+        (2): ReLU()
+        (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (4): GroupNorm(8, 32, eps=1e-05, affine=True)
+        (5): ReLU()
+        (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (7): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (8): GroupNorm(8, 64, eps=1e-05, affine=True)
+        (9): ReLU()
+        (10): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (11): GroupNorm(8, 64, eps=1e-05, affine=True)
+        (12): ReLU()
+        (13): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (14): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (15): GroupNorm(8, 128, eps=1e-05, affine=True)
+        (16): ReLU()
+        (17): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (18): GroupNorm(8, 128, eps=1e-05, affine=True)
+        (19): ReLU()
+        (20): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (fc_layers): Sequential(
+        (0): Flatten(start_dim=1, end_dim=-1)
+        (1): Linear(in_features=2048, out_features=256, bias=True)
+        (2): ReLU()
+        (3): Dropout(p=0.5, inplace=False)
+        (4): Linear(in_features=256, out_features=10, bias=True)
+      )
+    )
+    (cross_entropy): CrossEntropyLoss()
+  )
+  (passive_loss): ReversedCrossEntropyLoss()
+)>
+13:27:12 - 
+
+13:27:12 - <bound method Optimizer.state_dict of SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    initial_lr: 0.01
+    lr: 0.01
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)>
+13:27:12 - 
+
+13:27:12 - <bound method LRScheduler.state_dict of <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x00000299095C7BD0>>
+13:27:12 - 
+
+13:27:12 - NOISE RATE ---- 0.4
+13:27:12 - 
+
+13:27:12 - Terminate Train Loop (Manual)
+13:27:12 - Train Time : 0.000000s
+Finished Training...
+13:27:12 - Arch & metrics Saved to APL\Models\cnn_9.pth...
+13:27:27 - <bound method APLLoss.state_dict of APLLoss(
+  (active_loss): NormalizedCrossEntropyLoss_REVISED(
+    (reduction): CNN_V4(
+      (conv_layers): Sequential(
+        (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): GroupNorm(8, 32, eps=1e-05, affine=True)
+        (2): ReLU()
+        (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (4): GroupNorm(8, 32, eps=1e-05, affine=True)
+        (5): ReLU()
+        (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (7): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (8): GroupNorm(8, 64, eps=1e-05, affine=True)
+        (9): ReLU()
+        (10): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (11): GroupNorm(8, 64, eps=1e-05, affine=True)
+        (12): ReLU()
+        (13): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (14): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (15): GroupNorm(8, 128, eps=1e-05, affine=True)
+        (16): ReLU()
+        (17): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (18): GroupNorm(8, 128, eps=1e-05, affine=True)
+        (19): ReLU()
+        (20): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (fc_layers): Sequential(
+        (0): Flatten(start_dim=1, end_dim=-1)
+        (1): Linear(in_features=2048, out_features=256, bias=True)
+        (2): ReLU()
+        (3): Dropout(p=0.5, inplace=False)
+        (4): Linear(in_features=256, out_features=10, bias=True)
+      )
+    )
+    (cross_entropy): CrossEntropyLoss()
+  )
+  (passive_loss): ReversedCrossEntropyLoss()
+)>
+13:27:27 - 
+
+13:27:27 - <bound method Optimizer.state_dict of SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    initial_lr: 0.01
+    lr: 0.01
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)>
+13:27:27 - 
+
+13:27:27 - <bound method LRScheduler.state_dict of <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x000002990996F810>>
+13:27:27 - 
+
+13:27:27 - NOISE RATE ---- 0.4
+13:27:27 - 
+
+13:27:57 - Epoch 1/100 | Train Loss: 1.1835, Train Accuracy: 0.1477 | Test Loss: 1.1425, Test Accuracy: 0.2450
+13:28:27 - Epoch 2/100 | Train Loss: 1.1647, Train Accuracy: 0.2001 | Test Loss: 1.0979, Test Accuracy: 0.3242
+13:28:57 - Epoch 3/100 | Train Loss: 1.1519, Train Accuracy: 0.2312 | Test Loss: 1.0828, Test Accuracy: 0.3664
+13:29:26 - Epoch 4/100 | Train Loss: 1.1424, Train Accuracy: 0.2495 | Test Loss: 1.0525, Test Accuracy: 0.3977
+13:29:58 - Epoch 5/100 | Train Loss: 1.1358, Train Accuracy: 0.2681 | Test Loss: 1.0212, Test Accuracy: 0.4602
+13:30:29 - Epoch 6/100 | Train Loss: 1.1283, Train Accuracy: 0.2876 | Test Loss: 1.0038, Test Accuracy: 0.4994
+13:31:00 - Epoch 7/100 | Train Loss: 1.1216, Train Accuracy: 0.2991 | Test Loss: 0.9846, Test Accuracy: 0.5042
+13:31:31 - Epoch 8/100 | Train Loss: 1.1142, Train Accuracy: 0.3133 | Test Loss: 0.9642, Test Accuracy: 0.5296
+13:32:02 - Epoch 9/100 | Train Loss: 1.1081, Train Accuracy: 0.3285 | Test Loss: 0.9466, Test Accuracy: 0.5567
+13:32:33 - Epoch 10/100 | Train Loss: 1.1024, Train Accuracy: 0.3419 | Test Loss: 0.9700, Test Accuracy: 0.5496
+13:33:04 - Epoch 11/100 | Train Loss: 1.0983, Train Accuracy: 0.3499 | Test Loss: 0.9376, Test Accuracy: 0.5665
+13:33:36 - Epoch 12/100 | Train Loss: 1.0928, Train Accuracy: 0.3613 | Test Loss: 0.9150, Test Accuracy: 0.5883
+13:34:07 - Epoch 13/100 | Train Loss: 1.0893, Train Accuracy: 0.3710 | Test Loss: 0.9340, Test Accuracy: 0.6010
+13:34:38 - Epoch 14/100 | Train Loss: 1.0847, Train Accuracy: 0.3764 | Test Loss: 0.9171, Test Accuracy: 0.6197
+13:35:10 - Epoch 15/100 | Train Loss: 1.0820, Train Accuracy: 0.3830 | Test Loss: 0.8930, Test Accuracy: 0.6475
+13:35:41 - Epoch 16/100 | Train Loss: 1.0768, Train Accuracy: 0.3921 | Test Loss: 0.8781, Test Accuracy: 0.6573
+13:36:12 - Epoch 17/100 | Train Loss: 1.0746, Train Accuracy: 0.3973 | Test Loss: 0.8740, Test Accuracy: 0.6586
+13:36:44 - Epoch 18/100 | Train Loss: 1.0713, Train Accuracy: 0.4048 | Test Loss: 0.8877, Test Accuracy: 0.6671
+13:37:16 - Epoch 19/100 | Train Loss: 1.0671, Train Accuracy: 0.4109 | Test Loss: 0.8634, Test Accuracy: 0.6664
+13:37:47 - Epoch 20/100 | Train Loss: 1.0656, Train Accuracy: 0.4147 | Test Loss: 0.8550, Test Accuracy: 0.6871
+13:38:19 - Epoch 21/100 | Train Loss: 1.0617, Train Accuracy: 0.4219 | Test Loss: 0.8714, Test Accuracy: 0.6955
+13:38:50 - Epoch 22/100 | Train Loss: 1.0595, Train Accuracy: 0.4242 | Test Loss: 0.8633, Test Accuracy: 0.6930
+13:39:22 - Epoch 23/100 | Train Loss: 1.0564, Train Accuracy: 0.4291 | Test Loss: 0.8419, Test Accuracy: 0.6906
+13:39:54 - Epoch 24/100 | Train Loss: 1.0550, Train Accuracy: 0.4310 | Test Loss: 0.8317, Test Accuracy: 0.7022
+13:40:25 - Epoch 25/100 | Train Loss: 1.0514, Train Accuracy: 0.4387 | Test Loss: 0.8454, Test Accuracy: 0.7046
+13:40:57 - Epoch 26/100 | Train Loss: 1.0497, Train Accuracy: 0.4398 | Test Loss: 0.8294, Test Accuracy: 0.7165
+13:41:28 - Epoch 27/100 | Train Loss: 1.0460, Train Accuracy: 0.4432 | Test Loss: 0.8291, Test Accuracy: 0.7335
+13:42:00 - Epoch 28/100 | Train Loss: 1.0455, Train Accuracy: 0.4456 | Test Loss: 0.8142, Test Accuracy: 0.7305
+13:42:31 - Epoch 29/100 | Train Loss: 1.0416, Train Accuracy: 0.4513 | Test Loss: 0.8084, Test Accuracy: 0.7450
+13:43:03 - Epoch 30/100 | Train Loss: 1.0403, Train Accuracy: 0.4540 | Test Loss: 0.8244, Test Accuracy: 0.7241
+13:43:35 - Epoch 31/100 | Train Loss: 1.0376, Train Accuracy: 0.4587 | Test Loss: 0.8137, Test Accuracy: 0.7494
+13:44:07 - Epoch 32/100 | Train Loss: 1.0355, Train Accuracy: 0.4598 | Test Loss: 0.8128, Test Accuracy: 0.7510
+13:44:38 - Epoch 33/100 | Train Loss: 1.0339, Train Accuracy: 0.4616 | Test Loss: 0.8012, Test Accuracy: 0.7425
+13:45:10 - Epoch 34/100 | Train Loss: 1.0319, Train Accuracy: 0.4682 | Test Loss: 0.8128, Test Accuracy: 0.7528
+13:45:42 - Epoch 35/100 | Train Loss: 1.0302, Train Accuracy: 0.4692 | Test Loss: 0.7970, Test Accuracy: 0.7545
+13:46:13 - Epoch 36/100 | Train Loss: 1.0269, Train Accuracy: 0.4735 | Test Loss: 0.7940, Test Accuracy: 0.7522
+13:46:43 - Epoch 37/100 | Train Loss: 1.0255, Train Accuracy: 0.4750 | Test Loss: 0.7915, Test Accuracy: 0.7595
+13:47:15 - Epoch 38/100 | Train Loss: 1.0225, Train Accuracy: 0.4787 | Test Loss: 0.7915, Test Accuracy: 0.7620
+13:47:47 - Epoch 39/100 | Train Loss: 1.0205, Train Accuracy: 0.4801 | Test Loss: 0.7864, Test Accuracy: 0.7676
+13:48:19 - Epoch 40/100 | Train Loss: 1.0185, Train Accuracy: 0.4840 | Test Loss: 0.7855, Test Accuracy: 0.7674
+13:48:51 - Epoch 41/100 | Train Loss: 1.0171, Train Accuracy: 0.4874 | Test Loss: 0.7919, Test Accuracy: 0.7701
+13:49:22 - Epoch 42/100 | Train Loss: 1.0150, Train Accuracy: 0.4890 | Test Loss: 0.7801, Test Accuracy: 0.7804
+13:49:54 - Epoch 43/100 | Train Loss: 1.0142, Train Accuracy: 0.4887 | Test Loss: 0.7801, Test Accuracy: 0.7690
+13:50:26 - Epoch 44/100 | Train Loss: 1.0113, Train Accuracy: 0.4934 | Test Loss: 0.7723, Test Accuracy: 0.7761
+13:50:57 - Epoch 45/100 | Train Loss: 1.0106, Train Accuracy: 0.4952 | Test Loss: 0.7719, Test Accuracy: 0.7867
+13:51:29 - Epoch 46/100 | Train Loss: 1.0092, Train Accuracy: 0.4966 | Test Loss: 0.7733, Test Accuracy: 0.7816
+13:52:01 - Epoch 47/100 | Train Loss: 1.0080, Train Accuracy: 0.4971 | Test Loss: 0.7728, Test Accuracy: 0.7831
+13:52:33 - Epoch 48/100 | Train Loss: 1.0061, Train Accuracy: 0.4986 | Test Loss: 0.7679, Test Accuracy: 0.7828
+13:53:05 - Epoch 49/100 | Train Loss: 1.0078, Train Accuracy: 0.4992 | Test Loss: 0.7694, Test Accuracy: 0.7835
+13:53:37 - Epoch 50/100 | Train Loss: 1.0074, Train Accuracy: 0.4980 | Test Loss: 0.7689, Test Accuracy: 0.7823
+13:54:09 - Epoch 51/100 | Train Loss: 1.0067, Train Accuracy: 0.5013 | Test Loss: 0.7684, Test Accuracy: 0.7833
+13:54:41 - Epoch 52/100 | Train Loss: 1.0067, Train Accuracy: 0.4990 | Test Loss: 0.7655, Test Accuracy: 0.7901
+13:55:12 - Epoch 53/100 | Train Loss: 1.0069, Train Accuracy: 0.5006 | Test Loss: 0.7680, Test Accuracy: 0.7854
+13:55:44 - Epoch 54/100 | Train Loss: 1.0078, Train Accuracy: 0.4994 | Test Loss: 0.7685, Test Accuracy: 0.7843
+13:56:15 - Epoch 55/100 | Train Loss: 1.0077, Train Accuracy: 0.4988 | Test Loss: 0.7691, Test Accuracy: 0.7794
+13:56:47 - Epoch 56/100 | Train Loss: 1.0088, Train Accuracy: 0.4984 | Test Loss: 0.7668, Test Accuracy: 0.7816
+13:57:19 - Epoch 57/100 | Train Loss: 1.0087, Train Accuracy: 0.4979 | Test Loss: 0.7733, Test Accuracy: 0.7818
+13:57:51 - Epoch 58/100 | Train Loss: 1.0100, Train Accuracy: 0.4965 | Test Loss: 0.7727, Test Accuracy: 0.7792
+13:58:23 - Epoch 59/100 | Train Loss: 1.0103, Train Accuracy: 0.4944 | Test Loss: 0.7738, Test Accuracy: 0.7740
+13:58:56 - Epoch 60/100 | Train Loss: 1.0113, Train Accuracy: 0.4921 | Test Loss: 0.7757, Test Accuracy: 0.7729
+13:59:28 - Epoch 61/100 | Train Loss: 1.0138, Train Accuracy: 0.4878 | Test Loss: 0.7809, Test Accuracy: 0.7814
+13:59:58 - Epoch 62/100 | Train Loss: 1.0128, Train Accuracy: 0.4894 | Test Loss: 0.7771, Test Accuracy: 0.7649
+14:00:28 - Epoch 63/100 | Train Loss: 1.0155, Train Accuracy: 0.4871 | Test Loss: 0.7962, Test Accuracy: 0.7507
+14:01:00 - Epoch 64/100 | Train Loss: 1.0160, Train Accuracy: 0.4844 | Test Loss: 0.8042, Test Accuracy: 0.7481
+14:01:31 - Epoch 65/100 | Train Loss: 1.0164, Train Accuracy: 0.4838 | Test Loss: 0.7753, Test Accuracy: 0.7673
+14:02:00 - Epoch 66/100 | Train Loss: 1.0201, Train Accuracy: 0.4809 | Test Loss: 0.7833, Test Accuracy: 0.7673
+14:02:32 - Epoch 67/100 | Train Loss: 1.0216, Train Accuracy: 0.4791 | Test Loss: 0.7989, Test Accuracy: 0.7463
+14:03:04 - Epoch 68/100 | Train Loss: 1.0209, Train Accuracy: 0.4773 | Test Loss: 0.8061, Test Accuracy: 0.7417
+14:03:36 - Epoch 69/100 | Train Loss: 1.0223, Train Accuracy: 0.4787 | Test Loss: 0.7832, Test Accuracy: 0.7576
+14:04:07 - Epoch 70/100 | Train Loss: 1.0240, Train Accuracy: 0.4763 | Test Loss: 0.7978, Test Accuracy: 0.7348
+14:04:39 - Epoch 71/100 | Train Loss: 1.0252, Train Accuracy: 0.4737 | Test Loss: 0.7876, Test Accuracy: 0.7554
+14:05:11 - Epoch 72/100 | Train Loss: 1.0256, Train Accuracy: 0.4726 | Test Loss: 0.7980, Test Accuracy: 0.7418
+14:05:43 - Epoch 73/100 | Train Loss: 1.0257, Train Accuracy: 0.4727 | Test Loss: 0.8077, Test Accuracy: 0.7255
+14:06:14 - Epoch 74/100 | Train Loss: 1.0270, Train Accuracy: 0.4709 | Test Loss: 0.8013, Test Accuracy: 0.7492
+14:06:46 - Epoch 75/100 | Train Loss: 1.0267, Train Accuracy: 0.4716 | Test Loss: 0.7948, Test Accuracy: 0.7332
+14:07:17 - Epoch 76/100 | Train Loss: 1.0293, Train Accuracy: 0.4688 | Test Loss: 0.8009, Test Accuracy: 0.7444
+14:07:48 - Epoch 77/100 | Train Loss: 1.0291, Train Accuracy: 0.4679 | Test Loss: 0.8024, Test Accuracy: 0.7243
+14:08:19 - Epoch 78/100 | Train Loss: 1.0272, Train Accuracy: 0.4686 | Test Loss: 0.7865, Test Accuracy: 0.7534
+14:08:49 - Epoch 79/100 | Train Loss: 1.0287, Train Accuracy: 0.4705 | Test Loss: 0.7884, Test Accuracy: 0.7391
+14:09:21 - Epoch 80/100 | Train Loss: 1.0278, Train Accuracy: 0.4705 | Test Loss: 0.7849, Test Accuracy: 0.7349
+14:09:53 - Epoch 81/100 | Train Loss: 1.0268, Train Accuracy: 0.4701 | Test Loss: 0.8029, Test Accuracy: 0.7389
+14:10:25 - Epoch 82/100 | Train Loss: 1.0283, Train Accuracy: 0.4695 | Test Loss: 0.7973, Test Accuracy: 0.7486
+14:10:57 - Epoch 83/100 | Train Loss: 1.0279, Train Accuracy: 0.4713 | Test Loss: 0.8059, Test Accuracy: 0.7344
+14:11:29 - Epoch 84/100 | Train Loss: 1.0288, Train Accuracy: 0.4690 | Test Loss: 0.8071, Test Accuracy: 0.7369
+14:12:00 - Epoch 85/100 | Train Loss: 1.0283, Train Accuracy: 0.4706 | Test Loss: 0.8003, Test Accuracy: 0.7406
+14:12:32 - Epoch 86/100 | Train Loss: 1.0261, Train Accuracy: 0.4722 | Test Loss: 0.8165, Test Accuracy: 0.7670
+14:13:04 - Epoch 87/100 | Train Loss: 1.0276, Train Accuracy: 0.4691 | Test Loss: 0.8070, Test Accuracy: 0.7358
+14:13:36 - Epoch 88/100 | Train Loss: 1.0268, Train Accuracy: 0.4727 | Test Loss: 0.7942, Test Accuracy: 0.7566
+14:14:07 - Epoch 89/100 | Train Loss: 1.0258, Train Accuracy: 0.4720 | Test Loss: 0.7948, Test Accuracy: 0.7352
+14:14:39 - Epoch 90/100 | Train Loss: 1.0259, Train Accuracy: 0.4713 | Test Loss: 0.7839, Test Accuracy: 0.7583
+14:15:09 - Epoch 91/100 | Train Loss: 1.0262, Train Accuracy: 0.4718 | Test Loss: 0.7837, Test Accuracy: 0.7552
+14:15:09 - Terminate Train Loop (Manual)
+14:15:09 - Train Time : 2861.966112s
+Finished Training...
+14:15:09 - Arch & metrics Saved to APL\Models\cnn_9.pth...
+10:52:10 - <bound method APLLoss.state_dict of APLLoss(
+  (active_loss): NormalizedCrossEntropyLoss(
+    (reduction): CNN_V1(
+      (block1): Sequential(
+        (0): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU()
+        (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (3): ReLU()
+        (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (block2): Sequential(
+        (0): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU()
+        (2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (3): ReLU()
+        (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (block3): Sequential(
+        (0): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): ReLU()
+        (2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (3): ReLU()
+        (4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (classifier): Sequential(
+        (0): Flatten(start_dim=1, end_dim=-1)
+        (1): Linear(in_features=4096, out_features=256, bias=True)
+        (2): ReLU()
+        (3): Dropout(p=0.5, inplace=False)
+        (4): Linear(in_features=256, out_features=10, bias=True)
+      )
+    )
+    (cross_entropy): CrossEntropyLoss()
+  )
+  (passive_loss): ReversedCrossEntropyLoss()
+)>
+10:52:10 - 
+
+10:52:10 - <bound method Optimizer.state_dict of SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    initial_lr: 0.01
+    lr: 0.01
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)>
+10:52:10 - 
+
+10:52:10 - <bound method LRScheduler.state_dict of <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x0000014BF8C6DDD0>>
+10:52:10 - 
+
+10:52:10 - NOISE RATE ---- 0.4
+10:52:10 - 
+
+10:52:10 - Terminate Train Loop (Manual)
+10:52:10 - Train Time : 0.000000s
+Finished Training...
+10:52:10 - Arch & metrics Saved to APL\Models\cnn_9.pth...

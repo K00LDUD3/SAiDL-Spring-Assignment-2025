@@ -1,11 +1,22 @@
 # SAiDL-Spring-Assignment-2025
 
-## CORE ML Assigment
+Documentation:
 
-#### Part 1 - Data Preparation
+Navigation:
 
-Implemented this step using two different structures:
-
-- Instanced the CIFAR10 dataset, passed it through a method that assigns noised labels to a deepcopy of the dataset
-- Instanced the CIFAR10 dataset through a subclass that inherits the CIFAR10 class. An user defined method in the subclass was used to then noisify the dataset
-
+- CoreML
+  - Core_ML.ipynb - Main Notebook
+  - NCE
+    - Logs - Contains logs of corresponding versions of models trained with NCE
+    - Models - Contains models trained with NCE as criterion/loss
+  - APL
+    - Logs - Contains logs of corresponding versions of models trained with APL
+    - Models - Contains models trained with NCE as criterion/loss
+  - ...
+  - ...
+  - ...
+  - Other losses with identical directories
+- Reinforcement Learning
+  - GridNavigation - My attempt while learning RL in discrete action and state spaces
+  - TD3_HopperV4.ipynb - Main Notebook
+  - training_log.txt - Log with rewards 

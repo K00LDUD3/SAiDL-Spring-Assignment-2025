@@ -1,0 +1,46 @@
+19:44:54 - <bound method Module.state_dict of CrossEntropyLoss()>
+19:44:54 - 
+
+19:44:54 - <bound method Optimizer.state_dict of SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    initial_lr: 0.01
+    lr: 0.01
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)>
+19:44:54 - 
+
+19:44:54 - NOISE RATE ---- 0.5
+19:44:54 - 
+
+19:57:42 - <bound method Module.state_dict of CrossEntropyLoss()>
+19:57:42 - 
+
+19:57:42 - <bound method Optimizer.state_dict of SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    initial_lr: 0.01
+    lr: 0.01
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)>
+19:57:42 - 
+
+19:57:42 - NOISE RATE ---- 0.5
+19:57:42 - 
+
+19:57:42 - Terminate Train Loop (Manual)
+19:57:42 - Train Time : 0.000000s
+Finished Training...
+19:57:42 - Arch & metrics Saved to CE\Models\cnn_0.pth...

@@ -1,7 +1,7 @@
 import os
 
 class IntegerTracker:
-    def __init__(self, file_name="Logs\integer_value.txt"):
+    def __init__(self, file_name):
         self.file_name = file_name
         self.initialize_file()
 

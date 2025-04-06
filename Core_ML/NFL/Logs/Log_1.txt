@@ -1,0 +1,44 @@
+17:08:32 - <bound method Module.state_dict of NormalizedFocalLoss()>
+17:08:32 - 
+
+17:08:32 - <bound method Optimizer.state_dict of SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    initial_lr: 0.01
+    lr: 0.01
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.001
+)>
+17:08:32 - 
+
+17:08:32 - {'step_size': 10, 'gamma': 0.5, 'base_lrs': [0.01], 'last_epoch': 0, 'verbose': False, '_step_count': 1, '_get_lr_called_within_step': False, '_last_lr': [0.01]}
+17:08:32 - 
+
+17:08:57 - Epoch 1/20 | Train Loss: 0.8079, Train Accuracy: 0.1329 | Test Loss: 0.7486, Test Accuracy: 0.3353
+17:09:21 - Epoch 2/20 | Train Loss: 0.7997, Train Accuracy: 0.1626 | Test Loss: 0.7326, Test Accuracy: 0.4020
+17:09:46 - Epoch 3/20 | Train Loss: 0.7962, Train Accuracy: 0.1768 | Test Loss: 0.7210, Test Accuracy: 0.4196
+17:10:11 - Epoch 4/20 | Train Loss: 0.7943, Train Accuracy: 0.1837 | Test Loss: 0.7037, Test Accuracy: 0.4360
+17:10:34 - Epoch 5/20 | Train Loss: 0.7925, Train Accuracy: 0.1874 | Test Loss: 0.7001, Test Accuracy: 0.4786
+17:10:58 - Epoch 6/20 | Train Loss: 0.7909, Train Accuracy: 0.1944 | Test Loss: 0.6958, Test Accuracy: 0.4769
+17:11:23 - Epoch 7/20 | Train Loss: 0.7894, Train Accuracy: 0.1990 | Test Loss: 0.6881, Test Accuracy: 0.5012
+17:11:47 - Epoch 8/20 | Train Loss: 0.7880, Train Accuracy: 0.2031 | Test Loss: 0.6811, Test Accuracy: 0.5033
+17:12:12 - Epoch 9/20 | Train Loss: 0.7867, Train Accuracy: 0.2068 | Test Loss: 0.6761, Test Accuracy: 0.5095
+17:12:38 - Epoch 10/20 | Train Loss: 0.7858, Train Accuracy: 0.2095 | Test Loss: 0.6820, Test Accuracy: 0.5241
+17:13:02 - Epoch 11/20 | Train Loss: 0.7832, Train Accuracy: 0.2174 | Test Loss: 0.6576, Test Accuracy: 0.5367
+17:13:26 - Epoch 12/20 | Train Loss: 0.7820, Train Accuracy: 0.2207 | Test Loss: 0.6611, Test Accuracy: 0.5499
+17:13:51 - Epoch 13/20 | Train Loss: 0.7816, Train Accuracy: 0.2222 | Test Loss: 0.6589, Test Accuracy: 0.5497
+17:14:15 - Epoch 14/20 | Train Loss: 0.7801, Train Accuracy: 0.2242 | Test Loss: 0.6591, Test Accuracy: 0.5488
+17:14:39 - Epoch 15/20 | Train Loss: 0.7797, Train Accuracy: 0.2257 | Test Loss: 0.6552, Test Accuracy: 0.5776
+17:15:04 - Epoch 16/20 | Train Loss: 0.7789, Train Accuracy: 0.2289 | Test Loss: 0.6592, Test Accuracy: 0.5635
+17:15:28 - Epoch 17/20 | Train Loss: 0.7783, Train Accuracy: 0.2300 | Test Loss: 0.6531, Test Accuracy: 0.5628
+17:15:53 - Epoch 18/20 | Train Loss: 0.7776, Train Accuracy: 0.2279 | Test Loss: 0.6567, Test Accuracy: 0.5696
+17:16:18 - Epoch 19/20 | Train Loss: 0.7769, Train Accuracy: 0.2325 | Test Loss: 0.6337, Test Accuracy: 0.5717
+17:16:43 - Epoch 20/20 | Train Loss: 0.7758, Train Accuracy: 0.2345 | Test Loss: 0.6464, Test Accuracy: 0.5743
+17:16:43 - Train Time : 490.735204s
+Finished Training...
+17:16:43 - Arch & metrics Saved to NFL\Models\cnn_1.pth...

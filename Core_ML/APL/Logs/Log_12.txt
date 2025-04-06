@@ -1,0 +1,65 @@
+12:07:46 - <bound method APLLoss.state_dict of APLLoss(
+  (active_loss): NormalizedCrossEntropyLoss(
+    (reduction): CNN_V3(
+      (conv_layers): Sequential(
+        (0): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (1): LayerNorm((32, 32, 32), eps=1e-05, elementwise_affine=True)
+        (2): ReLU()
+        (3): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (4): LayerNorm((32, 32, 32), eps=1e-05, elementwise_affine=True)
+        (5): ReLU()
+        (6): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (7): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (8): LayerNorm((64, 16, 16), eps=1e-05, elementwise_affine=True)
+        (9): ReLU()
+        (10): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (11): LayerNorm((64, 16, 16), eps=1e-05, elementwise_affine=True)
+        (12): ReLU()
+        (13): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+        (14): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (15): LayerNorm((128, 8, 8), eps=1e-05, elementwise_affine=True)
+        (16): ReLU()
+        (17): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+        (18): LayerNorm((128, 8, 8), eps=1e-05, elementwise_affine=True)
+        (19): ReLU()
+        (20): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      )
+      (fc_layers): Sequential(
+        (0): Flatten(start_dim=1, end_dim=-1)
+        (1): Linear(in_features=2048, out_features=256, bias=True)
+        (2): ReLU()
+        (3): Dropout(p=0.5, inplace=False)
+        (4): Linear(in_features=256, out_features=10, bias=True)
+      )
+    )
+    (cross_entropy): CrossEntropyLoss()
+  )
+  (passive_loss): ReversedCrossEntropyLoss()
+)>
+12:07:46 - 
+
+12:07:46 - <bound method Optimizer.state_dict of SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    fused: None
+    initial_lr: 0.01
+    lr: 0.01
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)>
+12:07:46 - 
+
+12:07:46 - <bound method LRScheduler.state_dict of <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x0000014BF1CA6550>>
+12:07:46 - 
+
+12:07:46 - NOISE RATE ---- 0.4
+12:07:46 - 
+
+12:07:46 - Terminate Train Loop (Manual)
+12:07:46 - Train Time : 0.001001s
+Finished Training...
+12:07:46 - Arch & metrics Saved to APL\Models\cnn_12.pth...
