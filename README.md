@@ -4,7 +4,6 @@ Documentation:
 
 https://drive.google.com/drive/folders/1sDV5Y7Tup5mbSEqggBhrXbvmGFKSmDL7?usp=sharing
 
-Have a few changes left in the documentation (images) 
 
 Navigation:
 
